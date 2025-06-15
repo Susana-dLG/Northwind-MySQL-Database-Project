@@ -126,15 +126,15 @@ on e.employeeid = o.employeeid
 group by e.employeeid, e.firstname, e.lastname
 order by ordercount ; 
 
-## 🛠 6. Tools Used
+## Tools used 
 
 
-| Tool                     | Purpose                                 |
-| ------------------------ | --------------------------------------- |
-| **MySQL**                | Database engine used to execute queries |
-| **SQL Workbench**        | Writing and managing SQL scripts        |
-| **Northwind SQL Script** | To generate schema and sample data      |
-| **Output CSV files**     | Used for data preview or export         |
+| **MySQL**                         | Main database engine for creating and querying the Northwind schema |
+| **MySQL Workbench**               | GUI used for writing, testing, and visualizing SQL scripts          |
+| **Northwind `create.sql`**        | SQL script used to build the full relational schema from scratch    |
+| **Output CSV files***             | For previewing data exports and light preprocessing if needed       |
+| **ER Diagram Tools** *(optional)* | For mapping relationships and understanding foreign key structures  |
+
 
 ## 🧠 7. Key Learning Outcomes
 Designed and implemented a normalized relational schema
