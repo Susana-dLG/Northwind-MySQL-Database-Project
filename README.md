@@ -40,6 +40,7 @@ The database contains the following key tables:
 | `regions`, `territories`, `employee_territories` | Employee and regional mapping |
 
 📄 *All tables, keys, constraints, and indexes were created using the SQL script: `Northwind Database create.sql`.*
+![image](https://github.com/user-attachments/assets/4435981f-0be7-4265-9537-6f8e21e86bdf)
 
 ---
 
@@ -56,8 +57,26 @@ The Northwind dataset includes:
 This sample dataset allows you to simulate queries found in retail, sales, logistics, and CRM systems.
 
 ---
+## 🛠 5 Tools Used
 
-## 💡 5. Sample SQL Queries
+| Tool                  | Purpose                                              |
+|-----------------------|------------------------------------------------------|
+| **MySQL**             | Database engine for executing queries                |
+| **SQL Workbench / DBeaver** | SQL IDE for writing, testing, and managing scripts     |
+| **Northwind create.sql** | SQL file to generate database schema and structure     |
+| **Excel** *(optional)* | Used for previewing, exporting, and formatting results |
+| **ERD Tool (optional)** | Visualizing relationships between database tables    |
+
+## 🔍 6 Key Insights
+
+- 📦 **Top 5 customers** account for a significant portion of overall revenue—highlighting strategic clients.
+- 🗓️ Sales are seasonal: **monthly trends** show peaks in specific periods that could inform inventory planning.
+- 🛒 Products like **Chai and Chang** are frequently ordered, which may indicate strong product-market fit.
+- 🚚 Multiple orders use **Standard shipping**, suggesting customer preference or cost-efficiency strategy.
+- 👨‍💼 Employee order volume varies—insightful for assessing **staff performance and workloads**.
+
+
+## 💡 7. Sample SQL Queries
 
 ```sql
 -- 1.-- write sql query to return customers from USA
@@ -126,28 +145,5 @@ on e.employeeid = o.employeeid
 group by e.employeeid, e.firstname, e.lastname
 order by ordercount ; 
 
-
----
-
-## 🛠 Tools Used 
-
-| Tool                              | Purpose                                                             |
-| --------------------------------- | ------------------------------------------------------------------- |
-| **MySQL**                         | Main database engine for creating and querying the Northwind schema |
-| **MySQL Workbench**               | GUI used for writing, testing, and visualizing SQL scripts          |
-| **Northwind `create.sql`**        | SQL script used to build the full relational schema from scratch    |
-| **Excel** *(optional)*            | For previewing data exports and light preprocessing if needed       |
-| **ER Diagram Tools** *(optional)* | For mapping relationships and understanding foreign key structures  |
-
----
-
-## 💡 Key Insights
-
-* 🌍 **Top Sales Regions & Customers**: Using revenue aggregations, we identified high-value customers and regions driving the most business activity.
-* 📦 **Best-Selling Products**: Queries showed which products had the highest order volumes—ideal for inventory planning and promotions.
-* 🧑‍💼 **Employee Activity**: Employee-linked order counts help analyze individual productivity or regional performance.
-* 💸 **Revenue Trends**: By grouping revenue by month, we tracked performance seasonally and identified periods of growth or decline.
-* 🧺 **Order Behavior**: Order details and priorities revealed useful patterns in customer purchasing habits.
-* 🔄 **Database Design Principles**: The schema uses normalization, foreign key constraints, and indexing, providing an excellent model for scalable relational design.
 
 ---
