@@ -126,32 +126,10 @@ on e.employeeid = o.employeeid
 group by e.employeeid, e.firstname, e.lastname
 order by ordercount ; 
 
-## Tools used 
-
-
-| **MySQL**                         | Main database engine for creating and querying the Northwind schema |
-| **MySQL Workbench**               | GUI used for writing, testing, and visualizing SQL scripts          |
-| **Northwind `create.sql`**        | SQL script used to build the full relational schema from scratch    |
-| **Output CSV files***             | For previewing data exports and light preprocessing if needed       |
-| **ER Diagram Tools** *(optional)* | For mapping relationships and understanding foreign key structures  |
-
-
-## 🧠 7. Key Learning Outcomes
-Designed and implemented a normalized relational schema
-
-Queried interconnected data using JOINs, aggregates, and GROUP BY
-
-Applied date functions, sorting, and limiting to get business insights
-
-Practiced query optimization with indexes and keys
-
-Simulated real-world database tasks relevant to retail and supply chain domains
-
-Absolutely! Here's a polished section you can include in your `README.md` under **Tools Used** and **Key Insights** for the Northwind MySQL project:
 
 ---
 
-## 🛠 Tools Used
+## 🛠 Tools Used 
 
 | Tool                              | Purpose                                                             |
 | --------------------------------- | ------------------------------------------------------------------- |
@@ -173,4 +151,3 @@ Absolutely! Here's a polished section you can include in your `README.md` under 
 * 🔄 **Database Design Principles**: The schema uses normalization, foreign key constraints, and indexing, providing an excellent model for scalable relational design.
 
 ---
-
